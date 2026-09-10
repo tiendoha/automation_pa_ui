@@ -1,0 +1,3 @@
+page,automation_status,quality_verdict,template_captured,production_scanned,ote_scanned,comparisons_complete,batch_complete,run_id,production_link_deduplicated,production_raw_pass,production_get_fallback_pass,production_canonicalized_pass,production_failed,production_unsafe_skipped,production_format_only,production_completed_non_read,evidence_path
+hosting,PARTIAL,FAIL,true,true,true,true,false,7ae3c78c-7c06-458b-b7b3-aa148bfd6930,114,109,0,0,3,2,3,0,evidence/7ae3c78c-7c06-458b-b7b3-aa148bfd6930/hosting
+cloud-server,PARTIAL,NO_VERDICT,true,true,false,false,false,c1510000-0000-4000-8000-000000000001,122,101,0,0,19,2,9,0,evidence/c1510000-0000-4000-8000-000000000001/cloud-server

@@ -1,0 +1,7 @@
+{
+  "id": "fixture-page",
+  "environment": "ote",
+  "normalizedUrl": "https://example.com/",
+  "pageType": "landing",
+  "status": "confirmed"
+}

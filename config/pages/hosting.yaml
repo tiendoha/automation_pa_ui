@@ -1,0 +1,47 @@
+id: hosting
+roles: { template: reference, ote: target, production: target }
+pageType: service-category
+severity: high
+status: confirmed
+internalLinkPolicy:
+  maxLinks: 500
+  unsafePathPatterns:
+    - '(^|/)(signout|logout|delete|remove|upload|payment|checkout|cart|precart|submit)(/|$|\\?)'
+urls:
+  template: https://template.web30s.vn/pa_2024_v1/index.php?page=hosting
+  ote: https://www-ote.pavietnam.vn/vn/hosting/
+  production: https://www.pavietnam.vn/vn/hosting/
+selectors:
+  template:
+    mainContent: { selector: '.pa_dichvu', status: confirmed }
+    sections: { selector: '.pa_dichvu > :is(div, section)', status: confirmed }
+    serviceList: { selector: '#dichvu_packages', status: confirmed }
+    detailLinks: { selector: '#dichvu_packages a[href]', status: confirmed }
+    priceOverview: { selector: '#dichvu_packages .package_item', status: confirmed }
+    header: { selector: 'header', status: confirmed }
+    megaMenu:
+      { selector: 'header .main_menu', status: confirmed, cssProperties: [display, position] }
+    footerDesktop:
+      { selector: 'footer.footer_v3', status: confirmed, cssProperties: [display, position] }
+  ote:
+    mainContent: { selector: '.add_page_hosting .pa_dichvu', status: confirmed }
+    sections: { selector: '.add_page_hosting .pa_dichvu > .pa_box_content', status: confirmed }
+    serviceList: { selector: '#packages', status: confirmed }
+    detailLinks: { selector: '#packages a[href]', status: confirmed }
+    priceOverview: { selector: '#packages .package_item', status: confirmed }
+    header: { selector: 'header', status: confirmed }
+    megaMenu:
+      { selector: 'header .main_menu', status: confirmed, cssProperties: [display, position] }
+    footerDesktop:
+      { selector: 'footer.footer_v3', status: confirmed, cssProperties: [display, position] }
+  production:
+    mainContent: { selector: '.add_page_hosting .pa_dichvu', status: confirmed }
+    sections: { selector: '.add_page_hosting .pa_dichvu > .pa_box_content', status: confirmed }
+    serviceList: { selector: '#packages', status: confirmed }
+    detailLinks: { selector: '#packages a[href]', status: confirmed }
+    priceOverview: { selector: '#packages .package_item', status: confirmed }
+    header: { selector: 'header', status: confirmed }
+    megaMenu:
+      { selector: 'header .main_menu', status: confirmed, cssProperties: [display, position] }
+    footerDesktop:
+      { selector: 'footer.footer_v3', status: confirmed, cssProperties: [display, position] }

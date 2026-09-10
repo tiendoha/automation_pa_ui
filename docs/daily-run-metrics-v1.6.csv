@@ -1,0 +1,1 @@
+daily_run_id,business_date,page_id,environment,stage,status,attempt_count,browser_restart_count,process_resume_count,started_at,ended_at,elapsed_seconds,pass_count,fail_count,inconclusive_count,unsafe_skipped_count,evidence_path,note

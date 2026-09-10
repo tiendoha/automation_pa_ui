@@ -1,0 +1,22 @@
+page_id,stage,started_at,ended_at,active_minutes,waiting_minutes,retry_count,note
+shared,source_audit,2026-09-10T09:23:00+07:00,2026-09-10T09:25:00+07:00,2,0,0,Baseline quality gate pass; Node v22.22.2 found instead of required Node 24.
+shared,dom_discovery,2026-09-10T09:25:00+07:00,2026-09-10T09:27:00+07:00,2,0,1,Six URLs returned HTTP 200; Chromium required sandbox approval.
+shared,implementation,2026-09-10T09:27:00+07:00,2026-09-10T09:33:00+07:00,6,0,0,YAML loader, three-environment model, normalizer/comparator and read-only request guard.
+hosting,config,2026-09-10T09:27:00+07:00,2026-09-10T09:30:00+07:00,3,0,0,Selector inventory stored in YAML.
+hosting,implementation,2026-09-10T09:30:00+07:00,2026-09-10T09:34:00+07:00,4,0,2,Fixed absent CLI option parsing and page.evaluate helper serialization.
+hosting,tests,2026-09-10T09:34:00+07:00,2026-09-10T09:35:00+07:00,1,0,0,Format lint typecheck and unit tests pass.
+hosting,first_run,2026-09-10T09:34:00+07:00,2026-09-10T09:34:21+07:00,1,0,2,Final three-environment scan completed; execution runtime 16.5 seconds total.
+shared,implementation,2026-09-10T09:42:00+07:00,2026-09-10T09:49:00+07:00,7,0,0,Separated tsconfig build; source tree guard; context-level production guard; environment evidence paths; cross-origin internal link normalization.
+hosting,first_run,2026-09-10T09:49:00+07:00,2026-09-10T09:49:22+07:00,1,0,0,Rerun complete with three distinct environment screenshots; execution runtime 16.5 seconds.
+cloud-server,dom_discovery,2026-09-10T09:49:22+07:00,2026-09-10T09:50:00+07:00,1,0,0,Read-only DOM and selector observations collected across three environments.
+cloud-server,config,2026-09-10T09:50:00+07:00,2026-09-10T09:50:00+07:00,0,0,0,Reused YAML schema and selectors with no new framework.
+cloud-server,first_run,2026-09-10T09:50:00+07:00,2026-09-10T09:50:17+07:00,1,0,0,Three-environment scan complete; execution runtime 11.3 seconds.
+cloud-server,tests,2026-09-10T09:49:00+07:00,2026-09-10T09:49:00+07:00,1,0,0,Final quality gate pass on Node 22 temporary runtime.
+shared,report,2026-09-10T09:50:17+07:00,2026-09-10T09:52:00+07:00,2,0,0,Updated completion, safety evidence, build audit and blockers.
+shared,source_audit,2026-09-10T10:12:00+07:00,2026-09-10T10:16:00+07:00,4,0,0,Read plan v1.2; audited Node runtime test convention source tree and existing C05 implementation.
+shared,runner_migration,2026-09-10T10:16:00+07:00,2026-09-10T10:48:00+07:00,32,0,0,"Migrated six pilot files to Playwright spec syntax; added reference and target roles."
+hosting,reference_capture,2026-09-10T10:48:24+07:00,2026-09-10T10:48:26+07:00,0.03,0,0,"Run e558efc9-e6a0-4e7d-ac0b-f8ab27ebd8c4; Template captured as reference."
+hosting,production_runtime,2026-09-10T10:48:26+07:00,2026-09-10T10:49:04+07:00,0.63,0,0,"Run e558efc9-e6a0-4e7d-ac0b-f8ab27ebd8c4; target evidence captured, zero completed non-read requests."
+hosting,ote_runtime,2026-09-10T10:49:04+07:00,2026-09-10T10:52:20+07:00,3.27,0,0,"Run e558efc9-e6a0-4e7d-ac0b-f8ab27ebd8c4; target evidence captured, zero completed non-read requests."
+shared,implementation,2026-09-10T10:16:00+07:00,2026-09-10T10:25:00+07:00,9,0,0,Installed temporary Node 24.21.0; added C05 resource console link component and layout evidence contracts plus YAML policy.
+hosting,first_run,2026-09-10T10:20:00+07:00,2026-09-10T10:21:00+07:00,1,0,0,Node 24 Template C05 discovery completed; evidence found unclassified errors and one failed HEAD link.

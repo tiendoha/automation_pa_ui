@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env
+evidence/**
+!evidence/.gitkeep
+coverage/
+test-results/

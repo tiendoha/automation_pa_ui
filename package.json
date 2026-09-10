@@ -1,0 +1,48 @@
+{
+  "name": "automation-pa-ui",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Configuration-driven, read-only UI risk monitoring",
+  "type": "module",
+  "engines": {
+    "node": ">=22.22.2 <23"
+  },
+  "scripts": {
+    "clean:dist": "node --import tsx src/build/clean-dist.ts",
+    "assert:dist": "node --import tsx src/build/output-guard.ts",
+    "build": "npm run clean:dist && tsc -p tsconfig.build.json && npm run assert:dist",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "playwright test",
+    "test:watch": "playwright test --ui",
+    "scan": "node --import tsx src/cli/index.ts scan",
+    "monitor:daily": "node --import tsx src/cli/index.ts monitor:daily",
+    "monitor:status": "node --import tsx src/cli/index.ts monitor:status",
+    "monitor:report": "node --import tsx src/cli/index.ts monitor:report",
+    "scan:built": "node dist/cli/index.js scan",
+    "cleanup": "node --import tsx src/cli/index.ts cleanup",
+    "migrate": "node-pg-migrate up",
+    "migrate:down": "node-pg-migrate down"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "node-pg-migrate": "^9.0.0",
+    "pg": "^8.13.1",
+    "playwright": "^1.51.1",
+    "yaml": "^2.9.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^22.10.5",
+    "@types/pg": "^8.11.10",
+    "eslint": "^9.19.0",
+    "prettier": "^3.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.22.0"
+  }
+}

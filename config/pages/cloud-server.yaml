@@ -1,0 +1,40 @@
+id: cloud-server
+roles: { template: reference, ote: target, production: target }
+pageType: service-detail
+severity: medium
+status: confirmed
+internalLinkPolicy:
+  maxLinks: 500
+  unsafePathPatterns:
+    - '(^|/)(signout|logout|delete|remove|upload|payment|checkout|cart|precart|submit)(/|$|\\?)'
+urls:
+  template: https://template.web30s.vn/pa_2024_v1/index.php?page=cloud-server
+  ote: https://www-ote.pavietnam.vn/vn/server/cloud-server
+  production: https://www.pavietnam.vn/vn/server/cloud-server
+selectors:
+  template:
+    mainContent: { selector: '.pa_dichvu', status: confirmed }
+    sections: { selector: '.pa_dichvu > :is(div, section)', status: confirmed }
+    header: { selector: 'header', status: confirmed }
+    megaMenu:
+      { selector: 'header .main_menu', status: confirmed, cssProperties: [display, position] }
+    footerDesktop:
+      { selector: 'footer.footer_v3', status: confirmed, cssProperties: [display, position] }
+  ote:
+    mainContent: { selector: '.add_page_cloudserverbasic .pa_dichvu', status: confirmed }
+    sections:
+      { selector: '.add_page_cloudserverbasic .pa_dichvu > .pa_box_content', status: confirmed }
+    header: { selector: 'header', status: confirmed }
+    megaMenu:
+      { selector: 'header .main_menu', status: confirmed, cssProperties: [display, position] }
+    footerDesktop:
+      { selector: 'footer.footer_v3', status: confirmed, cssProperties: [display, position] }
+  production:
+    mainContent: { selector: '.add_page_cloudserverbasic .pa_dichvu', status: confirmed }
+    sections:
+      { selector: '.add_page_cloudserverbasic .pa_dichvu > .pa_box_content', status: confirmed }
+    header: { selector: 'header', status: confirmed }
+    megaMenu:
+      { selector: 'header .main_menu', status: confirmed, cssProperties: [display, position] }
+    footerDesktop:
+      { selector: 'footer.footer_v3', status: confirmed, cssProperties: [display, position] }

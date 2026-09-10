@@ -1,0 +1,20 @@
+[
+  {
+    "id": "layout-frame",
+    "tier": "global",
+    "target": "*",
+    "definition": {},
+    "severity": "high",
+    "enabled": true,
+    "version": 1
+  },
+  {
+    "id": "landing-availability",
+    "tier": "page_type",
+    "target": "landing",
+    "definition": {},
+    "severity": "critical",
+    "enabled": true,
+    "version": 1
+  }
+]

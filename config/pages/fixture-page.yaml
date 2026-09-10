@@ -1,0 +1,16 @@
+id: fixture-page
+roles: { template: reference, ote: target, production: target }
+pageType: service-category
+severity: medium
+status: confirmed
+urls:
+  template: https://example.com/template
+  ote: https://example.com/ote
+  production: https://example.com/production
+selectors:
+  template:
+    mainContent: { selector: main, status: confirmed }
+  ote:
+    mainContent: { selector: main, status: confirmed }
+  production:
+    mainContent: { selector: main, status: confirmed }

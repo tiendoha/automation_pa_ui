@@ -1,0 +1,123 @@
+- id: http-status
+  tier: global
+  target: '*'
+  definition: { maxStatus: 399 }
+  severity: high
+  enabled: true
+  version: 1
+- id: unexpected-redirect
+  tier: global
+  target: '*'
+  definition: {}
+  severity: high
+  enabled: true
+  version: 1
+- id: page-timeout
+  tier: global
+  target: '*'
+  definition: { maxDurationMs: 30000 }
+  severity: high
+  enabled: true
+  version: 1
+- id: blank-page
+  tier: global
+  target: '*'
+  definition: { minBodyTextLength: 1 }
+  severity: high
+  enabled: true
+  version: 1
+- id: critical-resource
+  tier: global
+  target: '*'
+  definition: { coreResourceTypes: [document, stylesheet, script, xhr, fetch, image] }
+  severity: high
+  enabled: true
+  version: 1
+- id: critical-console
+  tier: global
+  target: '*'
+  definition:
+    {
+      thirdPartyIgnorePatterns:
+        [google-analytics, googletagmanager, doubleclick, facebook, linkedin],
+    }
+  severity: high
+  enabled: true
+  version: 1
+- id: internal-critical-link
+  tier: global
+  target: '*'
+  definition: { requireLinkChecks: true }
+  severity: high
+  enabled: true
+  version: 1
+- id: screenshot-evidence
+  tier: global
+  target: '*'
+  definition: {}
+  severity: high
+  enabled: true
+  version: 1
+- id: mega-menu
+  tier: global
+  target: '*'
+  definition: { selectorKey: megaMenu }
+  severity: high
+  enabled: true
+  version: 1
+- id: footer-desktop
+  tier: global
+  target: '*'
+  definition: { selectorKey: footerDesktop }
+  severity: high
+  enabled: true
+  version: 1
+- id: layout-frame
+  tier: global
+  target: '*'
+  definition: {}
+  severity: high
+  enabled: true
+  version: 1
+- id: category-main-content
+  tier: page_type
+  target: service-category
+  definition: { selectorKey: mainContent, minCount: 1 }
+  severity: high
+  enabled: true
+  version: 1
+- id: category-service-list
+  tier: page_type
+  target: service-category
+  definition: { selectorKey: serviceList, minCount: 1 }
+  severity: high
+  enabled: true
+  version: 1
+- id: category-detail-links
+  tier: page_type
+  target: service-category
+  definition: { selectorKey: detailLinks, minCount: 1 }
+  severity: high
+  enabled: true
+  version: 1
+- id: category-price-overview
+  tier: page_type
+  target: service-category
+  definition: { selectorKey: priceOverview, minCount: 1 }
+  severity: high
+  enabled: true
+  version: 1
+- id: detail-main-content
+  tier: page_type
+  target: service-detail
+  definition: { selectorKey: mainContent, minCount: 1 }
+  severity: medium
+  enabled: true
+  version: 1
+- id: detail-section-structure
+  tier: page_type
+  target: service-detail
+  definition: { selectorKey: sections, minCount: 1 }
+  severity: medium
+  enabled: true
+  version: 1

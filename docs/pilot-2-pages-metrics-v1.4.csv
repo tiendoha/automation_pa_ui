@@ -1,0 +1,6 @@
+plan_version,run_id,page_id,environment,stage,started_at,ended_at,elapsed_seconds,active_minutes,waiting_minutes,retry_count,result,note
+1.4,98c75893-4639-4495-8b5d-e654219b55e5,hosting,template,reference,2026-09-10T07:28:10.028Z,2026-09-10T07:28:11.800Z,1.772,0.03,0,0,PASS,Reference captured
+1.4,98c75893-4639-4495-8b5d-e654219b55e5,hosting,production,target,2026-09-10T07:28:11.000Z,2026-09-10T07:29:02.000Z,50.319,0.84,0,0,FAIL,Three failed links
+1.4,98c75893-4639-4495-8b5d-e654219b55e5,hosting,ote,target,2026-09-10T07:29:02.000Z,2026-09-10T07:33:24.000Z,261.968,4.37,0,0,FAIL,Six failed links and two page errors
+1.4,2bb5ffb6-2736-4d83-8af8-b6e05deb6822,cloud-server,template,reference,2026-09-10T07:30:40.000Z,2026-09-10T07:30:42.000Z,1.772,0.03,0,0,PASS,Reference captured
+1.4,2bb5ffb6-2736-4d83-8af8-b6e05deb6822,cloud-server,production,target,2026-09-10T07:30:42.000Z,2026-09-10T07:31:31.000Z,48.906,0.82,0,0,FAIL,Nineteen failed links

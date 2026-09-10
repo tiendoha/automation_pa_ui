@@ -1,0 +1,3 @@
+plan_version,run_id,page_id,environment,raw_href,resolved_url,canonical_url,attempts,final_status,classification,source_text,source_selector,evidence_path
+1.4,98c75893-4639-4495-8b5d-e654219b55e5,hosting,production,,,,,BLOCKED,DETAIL_EXPORT_PENDING,,,evidence/98c75893-4639-4495-8b5d-e654219b55e5/hosting/production/target/collector/production-scan.json
+1.4,98c75893-4639-4495-8b5d-e654219b55e5,hosting,ote,,,,,BLOCKED,DETAIL_EXPORT_PENDING,,,evidence/98c75893-4639-4495-8b5d-e654219b55e5/hosting/ote/target/collector/ote-scan.json
